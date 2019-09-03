@@ -6,6 +6,10 @@ public class Jogador {
     private String nome, email, senha;
     private double pontos;
 
+    public Jogador(){
+
+    }
+
     public Jogador(int codigo, int jogadas, String nome, String email, String senha, double pontos) {
         this.codigo = codigo;
         this.jogadas = jogadas;

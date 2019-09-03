@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jogo.controle.controleJogador">
+   <children>
+      <Button layoutX="144.0" layoutY="109.0" mnemonicParsing="false" text="Cadastrar" />
+      <Button layoutX="89.0" layoutY="109.0" mnemonicParsing="false" text="Voltar" />
+      <Label layoutX="18.0" layoutY="21.0" text="Nome:" />
+      <Label layoutX="23.0" layoutY="48.0" text="Email:" />
+      <Label layoutX="21.0" layoutY="76.0" text="Senha:" />
+      <TextField layoutX="62.0" layoutY="17.0" promptText="nome" />
+      <TextField layoutX="62.0" layoutY="44.0" promptText="email" />
+      <TextField layoutX="62.0" layoutY="71.0" promptText="senha" />
+   </children>
+</AnchorPane>

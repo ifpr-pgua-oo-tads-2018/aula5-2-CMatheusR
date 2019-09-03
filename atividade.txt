@@ -1,0 +1,11 @@
+
+Aula 5.2
+2 - Chico criou o seguinte jogo: dois jogadores tentam adivinhar ao mesmo tempo a soma de dois dados, aquele que acertar ganha 3 pontos, se os dois acertarem ambos ganham 2 pontos cada. O jogo fez tanto sucesso que ele precisa de um sistema para gerenciar o campeonato. Os requisitos do sistema são:
+
+Registrar um jogador (nome, e-mail, senha, número de jogadas, pontos)
+Registrar jogada, (jogador1, palpite1, jogador2, palpite2, soma). Para registrar uma jogada o sistema deve perguntar o e-mail e a senha dos jogadores e o palpite de cada jogador. O sistema gera o sorteio de dois dados, computa a soma e verifica se houve acerto, por fim armazena no BD os dados (jogada e atualização dos pontos e número de jogadas, se for o caso). Caso ocorra erro de autenticação (e-mail e senha não conferem com os armazenados) a jogada é descartada e nada deve ser salvo no BD.
+Mostrar o rank dos jogadores, por pontos e por número de jogadas.
+Procure utilizar o máximo possível consultas ao BD.
+Link do classroom:
+
+https://classroom.github.com/a/WACTLALp

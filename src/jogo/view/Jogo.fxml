@@ -20,8 +20,10 @@
          </font>
       </Label>
       <TextField fx:id="tfEmailJ1" layoutX="31.0" layoutY="72.0" promptText="E-mail" />
+      <PasswordField fx:id="tfSenhaJ1" layoutX="32.0" layoutY="117.0" promptText="Senha" />
       <TextField fx:id="tfPalpiteJ1" layoutX="91.0" layoutY="166.0" prefHeight="25.0" prefWidth="29.0" promptText="N°" />
       <TextField fx:id="tfEmailJ2" layoutX="406.0" layoutY="71.0" promptText="E-mail" />
+      <PasswordField fx:id="tfSenhaJ2" layoutX="406.0" layoutY="117.0" promptText="Senha" />
       <TextField fx:id="tfPalpiteJ2" layoutX="466.0" layoutY="166.0" prefHeight="25.0" prefWidth="29.0" promptText="N°" />
       <Label layoutX="89.0" layoutY="56.0" text="E-mail" />
       <Label layoutX="89.0" layoutY="99.0" text="Senha" />
@@ -29,8 +31,6 @@
       <Label layoutX="464.0" layoutY="56.0" text="E-mail" />
       <Label layoutX="464.0" layoutY="98.0" text="Senha" />
       <Label layoutX="462.0" layoutY="149.0" text="Palpite" />
-      <PasswordField fx:id="tfSenhaJ1" layoutX="32.0" layoutY="117.0" promptText="Senha" />
-      <PasswordField fx:id="tfSenhaJ2" layoutX="406.0" layoutY="117.0" promptText="Senha" />
       <Button fx:id="btSortear" layoutX="236.0" layoutY="65.0" mnemonicParsing="false" onAction="#Sortear" prefHeight="37.0" prefWidth="128.0" text="Sortear" />
       <Label fx:id="lbNumSurteado" alignment="CENTER" layoutX="252.0" layoutY="170.0" prefHeight="17.0" prefWidth="96.0" text="0" textAlignment="CENTER">
          <font>

@@ -115,14 +115,30 @@ public class JanelaJogo extends Controlador  {
             palpiteJ1 = Integer.parseInt(tfPalpiteJ1.getText());
             palpiteJ2 = Integer.parseInt(tfPalpiteJ2.getText());
             lbNumSurteado.setText(Integer.toString(num_sorteado));
-            if(palpiteJ1 == num_sorteado){
+            if(palpiteJ1 == num_sorteado && palpiteJ2 == num_sorteado){
                 lbAcertouJog1.setVisible(true);
-            }
-            else{lbNaoAcertouJog1.setVisible(true);}
-            if(palpiteJ2 == num_sorteado) {
                 lbAcertouJog2.setVisible(true);
+                j1.setPontos((j1.getPontos())+2);
+                j2.setPontos((j2.getPontos())+2);
+                jogDAO.atualizar(j1);
+                jogDAO.atualizar(j2);
             }
-            else{lbNaoAcertouJog2.setVisible(true);}
+            else if(palpiteJ1 == num_sorteado){
+                lbAcertouJog1.setVisible(true);
+                lbNaoAcertouJog2.setVisible(true);
+                j1.setPontos((j1.getPontos())+3);
+                jogDAO.atualizar(j1);
+            }
+            else if(palpiteJ2 == num_sorteado) {
+                lbAcertouJog2.setVisible(true);
+                lbNaoAcertouJog1.setVisible(true);
+                j2.setPontos((j2.getPontos())+3);
+                jogDAO.atualizar(j2);
+            }
+            else{
+                lbNaoAcertouJog1.setVisible(true);
+                lbNaoAcertouJog2.setVisible(true);
+            }
             Jogo jogo = new Jogo(j1.getCodigo(), j2.getCodigo(), num_sorteado, palpiteJ1, palpiteJ2);
             controleJogo.getInstance().cadastraJogo(jogo);
             btSortear.setDisable(true);

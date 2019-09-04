@@ -46,7 +46,7 @@ public class JanelaRanking {
     }
 
     @FXML
-    private void acaoSair(){
+    private void Voltar(){
         NavegadorJanelas.loadJanela(NavegadorJanelas.PRINCIPAL);
     }
 }

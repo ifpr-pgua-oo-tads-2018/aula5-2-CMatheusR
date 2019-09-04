@@ -75,4 +75,20 @@ public class SqliteJogadorDAO  implements jogadorDAO{
 
         return lista;
     }
+    @Override
+    public boolean verificarUsuario(String email, String senha) throws SQLException {
+        Connection con = FabricaConexao.getConnection();
+
+        Jogador j = dbAccess.query(con, "select * from jogador where email=? and senha=?",
+                new BeanHandler<Jogador>(Jogador.class), email, senha);
+        con.close();
+
+        if(j == null){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
 }

@@ -15,5 +15,9 @@ public class janelaPrincipal {
         NavegadorJanelas.loadJanela(NavegadorJanelas.RANKING);
     }
 
+    @FXML
+    public void iniciarJogo () {
+        NavegadorJanelas.loadJanela(NavegadorJanelas.JOGO);
+    }
 
 }
